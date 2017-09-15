@@ -1,5 +1,6 @@
 package com.veryworks.android.basicwidget;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.IdRes;
 import android.support.v7.app.AppCompatActivity;
@@ -85,6 +86,10 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.radioBlue:
                     textResult.setText("파란불이 켜졌습니다.");
+                    break;
+                case R.id.radioSpinner:
+                    Intent intent = new Intent(MainActivity.this, SpinnerActivity.class);
+                    startActivity(intent);
                     break;
             }
         }
